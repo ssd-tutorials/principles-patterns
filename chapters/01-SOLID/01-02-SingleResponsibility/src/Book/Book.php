@@ -4,12 +4,7 @@ namespace App\Book;
 
 use App\Filesystem\Filesystem;
 use App\Notification\Notification;
-use SSD\DotEnv\DotEnv;
 use Illuminate\Http\Request;
-
-use Swift_Mailer;
-use Swift_Message;
-use Swift_SmtpTransport;
 
 class Book
 {

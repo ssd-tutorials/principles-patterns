@@ -4,6 +4,7 @@ namespace App\Notification;
 
 use SSD\DotEnv\DotEnv;
 
+use Swift_Mailer;
 use Swift_Message;
 use Swift_SmtpTransport;
 
@@ -57,7 +58,7 @@ class Mail extends Notification
      */
     public function send()
     {
-        $mailer = \Swift_Mailer::newInstance($this->transport);
+        $mailer = Swift_Mailer::newInstance($this->transport);
 
         return $mailer->send($this->message());
     }
