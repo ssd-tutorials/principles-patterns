@@ -1,0 +1,12 @@
+{
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/"
+    }
+  },
+  "require": {
+    "swiftmailer/swiftmailer": "^5.4",
+    "illuminate/http": "^5.2",
+    "sebastiansulinski/dotenv": "^1.1"
+  }
+}
